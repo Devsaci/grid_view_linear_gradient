@@ -29,6 +29,9 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
+  void info(){}
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text("54. Grid View & Linear Gradient"),
       ),
       body: Container(
-        padding: EdgeInsets.only(top: 15),
+        padding: EdgeInsets.all(15),
         child: GridView(
           children: [
             Container(
@@ -58,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
           gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
             maxCrossAxisExtent: 200,
-            childAspectRatio: 5/2,
+            childAspectRatio: 3/2,
             crossAxisSpacing: 20,
             mainAxisSpacing: 20,
           ),
