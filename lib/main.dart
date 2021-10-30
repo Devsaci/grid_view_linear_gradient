@@ -29,13 +29,10 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   Widget info(String title, Color color) {
-    return   Container(
+    return Container(
       padding: EdgeInsets.all(15),
-      decoration: BoxDecoration(
-          color: color
-      ),
+      decoration: BoxDecoration(color: color),
       child: Text(title),
     );
   }
@@ -50,22 +47,14 @@ class _MyHomePageState extends State<MyHomePage> {
         padding: EdgeInsets.all(15),
         child: GridView(
           children: [
-            Container(
-              padding: EdgeInsets.all(15),
-              decoration: BoxDecoration(
-                  color: Colors.orange
-              ),
-              child: Text("Container 1"),
-            ),
-            Container(
-              padding: EdgeInsets.all(15),
-              decoration: BoxDecoration(
-                  color: Colors.blue
-              ),
-              child: Text("Container 2"),
-            ),
-
-
+            info("title", Colors.blue),
+            info("title", Colors.green),
+            info("title", Colors.lightGreen),
+            info("title", Colors.orange),
+            info("title", Colors.deepPurple),
+            info("title", Colors.black87),
+            info("title", Colors.redAccent),
+            info("title", Colors.orangeAccent),
           ],
           gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
             maxCrossAxisExtent: 200,
