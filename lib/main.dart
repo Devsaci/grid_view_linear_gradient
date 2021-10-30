@@ -34,9 +34,9 @@ class _MyHomePageState extends State<MyHomePage> {
     return   Container(
       padding: EdgeInsets.all(15),
       decoration: BoxDecoration(
-          color: Colors.orange
+          color: color
       ),
-      child: Text("Container 1"),
+      child: Text(title),
     );
   }
 
