@@ -30,9 +30,14 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  void info( String title, Color color){
-
-
+  Widget info(String title, Color color) {
+    return   Container(
+      padding: EdgeInsets.all(15),
+      decoration: BoxDecoration(
+          color: Colors.orange
+      ),
+      child: Text("Container 1"),
+    );
   }
 
   @override
@@ -64,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
           gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
             maxCrossAxisExtent: 200,
-            childAspectRatio: 3/2,
+            childAspectRatio: 3 / 2,
             crossAxisSpacing: 20,
             mainAxisSpacing: 20,
           ),
